@@ -1,5 +1,6 @@
 import type { Namespace } from '@/types';
 
 export const namespace: Namespace = {
-    name: 'RSSHub Test',
+    name: 'IMDb',
+    url: 'www.imdb.com',
 };
