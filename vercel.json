@@ -1,5 +1,15 @@
 {
-    "framework": null,
-    "github": { "silent": true },
-    "routes": [{ "src": "/.*", "dest": "/api/vercel.ts" }]
+  "version": 2,
+  "builds": [
+    {
+      "src": "lib/index.js", // 重要：确认这是你正确的入口 JS 文件
+      "use": "@vercel/node"  // 明确指定使用 Vercel Node.js 构建器
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",         // 将所有请求路径路由到入口文件处理
+      "dest": "lib/index.js" // 同样，确认这是正确的入口 JS 文件
+    }
+  ]
 }
