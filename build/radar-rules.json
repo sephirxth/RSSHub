@@ -2845,13 +2845,12 @@
     "_name": "8KCosplay",
     ".": [
       {
-        "title": "分类",
+        "title": "Unknown",
         "docs": "https://docs.rsshub.app/routes/picture",
         "source": [
-          "/category/:mainCategory/:cat/",
-          "/category/:cat/"
+          "/"
         ],
-        "target": "/8kcos/cat/:cat"
+        "target": "/8kcos/cat/:cat{.+}?"
       },
       {
         "title": "最新",
